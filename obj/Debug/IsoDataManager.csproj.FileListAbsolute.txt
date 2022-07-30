@@ -1,0 +1,11 @@
+C:\Users\E2011418\Desktop\IsoDataManager\obj\Debug\IsoDataManager.csproj.CoreCompileInputs.cache
+C:\Users\E2011418\Desktop\IsoDataManager\bin\Debug\IsoDataManager.dll
+C:\Users\E2011418\Desktop\IsoDataManager\bin\Debug\IsoDataManager.pdb
+C:\Users\E2011418\Desktop\IsoDataManager\bin\Debug\CADControl.dll
+C:\Users\E2011418\Desktop\IsoDataManager\bin\Debug\CADImport.dll
+C:\Users\E2011418\Desktop\IsoDataManager\bin\Debug\EPPlus.dll
+C:\Users\E2011418\Desktop\IsoDataManager\bin\Debug\SharpCompress.dll
+C:\Users\E2011418\Desktop\IsoDataManager\obj\Debug\IsoDataManager.csproj.CopyComplete
+C:\Users\E2011418\Desktop\IsoDataManager\obj\Debug\IsoDataManager.dll
+C:\Users\E2011418\Desktop\IsoDataManager\obj\Debug\IsoDataManager.pdb
+C:\Users\E2011418\Desktop\IsoDataManager\obj\Debug\IsoDataManager.csproj.AssemblyReference.cache
