@@ -25,7 +25,6 @@ namespace IsoDataManager
 		{
 			this.Path = Path;
 			this.Blocks = Blocks;
-			//base._002Ector();
 		}
 
 		public override string ToString()

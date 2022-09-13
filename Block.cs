@@ -1,10 +1,4 @@
-﻿// Decompiled with JetBrains decompiler
-// Type: IsoDataManager.Block
-// Assembly: IsoDataManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-// MVID: C7DAEF67-3FCE-4F74-9EA7-9C78771F8F42
-// Assembly location: C:\Users\E1219903\Program\AutoCad\Use\Pentair\IsoDataManager\IsoDataManager.dll
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -15,7 +9,6 @@ namespace IsoDataManager
 	{
 		protected virtual Type EqualityContract
 		{
-			
 			[CompilerGenerated]
 			get
 			{
@@ -25,15 +18,12 @@ namespace IsoDataManager
 
 		public string Name;
 
-
 		public Dictionary<string, string> Attributes;
 		
-
 		public Block(string Name, Dictionary<string, string> Attributes)
 		{
 			this.Name = Name;
 			this.Attributes = Attributes;
-			//base._002Ector();
 		}
 
 		public override string ToString()
@@ -41,17 +31,20 @@ namespace IsoDataManager
 			StringBuilder stringBuilder = new StringBuilder();
 			stringBuilder.Append("Block");
 			stringBuilder.Append(" { ");
+
 			if (PrintMembers(stringBuilder))
 			{
 				stringBuilder.Append(" ");
 			}
+
 			stringBuilder.Append("}");
+
 			return stringBuilder.ToString();
 		}
 
-		protected virtual bool PrintMembers(StringBuilder builder)
-		{
 #nullable enable
+        protected virtual bool PrintMembers(StringBuilder builder)
+		{
 			builder.Append("Name");
 			builder.Append(" = ");
 			builder.Append((object?)Name);
@@ -59,29 +52,31 @@ namespace IsoDataManager
 			builder.Append("Attributes");
 			builder.Append(" = ");
 			builder.Append(Attributes);
+
 			return true;
 		}
-
 
 		public static bool operator !=(Block? left, Block? right)
 		{
 			return !(left == right);
 		}
 
-		
-		public static bool operator ==(Block? left, Block? right)
-		{
 #nullable disable
+        public static bool operator ==(Block? left, Block? right)
+		{
 			if ((object)left != right)
 			{
 				return left?.Equals(right) ?? false;
 			}
+
 			return true;
 		}
 
 		public override int GetHashCode()
 		{
-			return (EqualityComparer<Type>.Default.GetHashCode(EqualityContract) * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Name)) * -1521134295 + EqualityComparer<Dictionary<string, string>>.Default.GetHashCode(Attributes);
+			return (EqualityComparer<Type>.Default
+										  .GetHashCode(EqualityContract) * -1521134295 + EqualityComparer<string>.Default.GetHashCode(Name)) 
+										  * -1521134295 + EqualityComparer<Dictionary<string, string>>.Default.GetHashCode(Attributes);
 		}
 
 #nullable enable
@@ -90,17 +85,19 @@ namespace IsoDataManager
 			return Equals(obj as Block);
 		}
 
-		public virtual bool Equals(Block? other)
-		{
 #nullable disable
+        public virtual bool Equals(Block? other)
+		{
 			if ((object)this != other)
 			{
 				if ((object)other != null && EqualityContract == other!.EqualityContract && EqualityComparer<string>.Default.Equals(Name, other!.Name))
 				{
 					return EqualityComparer<Dictionary<string, string>>.Default.Equals(Attributes, other!.Attributes);
 				}
+
 				return false;
 			}
+
 			return true;
 		}
 

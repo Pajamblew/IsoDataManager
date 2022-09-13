@@ -13,13 +13,18 @@ namespace IsoDataManager
     public static string GetFileName(string fileNameFull, string extension)
     {
       string withoutExtension = Path.GetFileNameWithoutExtension(fileNameFull);
+
       string directoryName = Path.GetDirectoryName(fileNameFull);
+
       string str = string.Empty;
+
       int num = 1;
+
       string fileName;
+
       while (true)
       {
-        string[] strArray = new string[5]
+        string[] directoryArray = new string[5]
         {
           directoryName,
           Path.DirectorySeparatorChar.ToString(),
@@ -27,11 +32,13 @@ namespace IsoDataManager
           str,
           extension
         };
-        if (File.Exists(fileName = string.Concat(strArray)))
-          str = string.Format("_({0})", (object) num++);
+
+        if (File.Exists(fileName = string.Concat(directoryArray)))
+          str = string.Format("_({0})", num++);
         else
           break;
       }
+
       return fileName;
     }
   }
